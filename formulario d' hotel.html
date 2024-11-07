@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Reserva de Hotel</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="form-container">
+        <h1>Reserva de Hotel</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
 
-<h2>Formulário de Reserva</h2>
-<form action="#" method="post">
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <label for="sexo">Sexo:</label><br>
-    <select id="sexo" name="sexo" required>
-        <option value="masculino">Masculino</option>
-        <option value="feminino">Feminino</option>
-        <option value="outro">Outro</option>
-    </select><br><br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+            <label for="checkin">Data de Check-in:</label>
+            <input type="date" id="checkin" name="checkin" required>
 
-    <label for="data_chegada">Data de Chegada:</label><br>
-    <input type="date" id="data_chegada" name="data_chegada" required><br><br>
+            <label for="checkout">Data de Check-out:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            
+            <label for="quartos">Número de Hóspedes:</label>
+            <input type="number" id="pessoas" name="quartos" min="1" required>
+            
+            <label for="quartos">Número de Quartos:</label>
+            <input type="number" id="quartos" name="quartos" min="1" required>
+           
+            <label for="comentarios">Observações:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
 
-    <label for="numero_hospedes">Número de Hóspedes:</label><br>
-    <input type="number" id="numero_hospedes" name="numero_hospedes" min="1" required><br><br>
-
-    <label for="numero_noites">Número de Noites:</label><br>
-    <input type="number" id="numero_noites" name="numero_noites" min="1" required><br><br>
-
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="4"></textarea><br><br>
-
-    <button type="submit">Enviar Reserva</button>
-</form>
-
+            <button type="submit">Reservar Agora</button>
+        </form> 
+    </div>
 </body>
 </html>
